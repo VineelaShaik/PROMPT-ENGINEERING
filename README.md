@@ -68,7 +68,7 @@ Popular examples include GPT models which can produce coherent, context aware pa
 The autoregressive approach gives fine grained control over each output step but can be slower for long generations since tokens are generated one at a time.
 ### 2. Diffusion Models
 Diffusion models generate data such as images or audio by starting with pure random noise and gradually refining it into a coherent output through a series of denoising steps.
-### Each step reverses a simulated diffusion process that added noise to real data during training.
+Each step reverses a simulated diffusion process that added noise to real data during training.
 This iterative approach can produce highly detailed and realistic results specially in image synthesis where models like Stable Diffusion and DALL·E 3 have set benchmarks.
 Diffusion models are also versatile they can be adapted for inpainting, style transfer and conditional generation from text prompts.
 ### 3. Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs)
@@ -103,6 +103,35 @@ AI assists in data visualization, forecasting and automated report generation, m
 Search engines enhanced with gen AI generate summaries, suggest related topics and refine user queries, improving information retrieval.
 
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/2ba27e86-6181-4cd1-846d-98f3aa471ee1" />
+
+## 4.  Generative AI impact of scaling in LLMs.
+## 5.  Explain about LLM and how it is build.
+## What are LLMs
+Large language models (LLMs) are a category of deep learning models trained on immense amounts of data, making them capable of understanding and generating natural language and other types of content to perform a wide range of tasks. LLMs are built on a type of neural network architecture called a transformer which excels at handling sequences of words and capturing patterns in text.
+
+LLMs work as giant statistical prediction machines that repeatedly predict the next word in a sequence. They learn patterns in their text and generate language that follows those patterns.
+
+<img width="318" height="159" alt="image" src="https://github.com/user-attachments/assets/303221e4-83cd-4456-a665-80384cc333a6" />
+
+
+## Building LLM model
+
+At a high level, the workflow looks like this:
+
+### 1. Convert raw text into model inputs.
+First, we need a way to represent text numerically. This usually means splitting text into tokens, mapping these tokens to integer IDs, and turning those IDs into embedding vectors. At this stage, we also decide how long the model’s context window should be and how to create input-target training pairs for next-token prediction.
+### 2. Implement the attention mechanism.
+The core idea behind modern LLMs is self-attention. Self-attention allows each token to weigh the relevance of earlier tokens in the sequence when computing its representation. In GPT-style models, this attention is causal, meaning the model can only attend to the current token and tokens to its left, not future tokens.
+### 3. Assemble a transformer-based language model.
+Once the tokenization and attention pieces are in place, we stack them into a full model. A GPT-like LLM typically combines token embeddings, positional information, multi-head self-attention, feed-forward sublayers, residual connections, normalization layers, and a final output head that predicts the next token.
+### 4. Pretrain the model on unlabeled text.
+The model is then trained on large text corpora with a self-supervised objective, usually next-token prediction. During this stage, the model is not taught explicit task labels such as “spam” or “not spam.” Instead, it learns useful statistical structure in language, such as syntax, semantics, facts, writing style, and many recurring patterns in text.
+### 5. Finetune the pretrained model for a specific goal.
+After pretraining, we can adapt the model to downstream tasks. Two common examples are finetuning for text classification and finetuning to follow instructions in a chat-like setting. The important idea is that pretraining gives the model broad language competence, while finetuning makes it more useful for a concrete application.
+### 6. Use the model for generation and evaluation.
+Finally, we use the trained model autoregressively: it generates one token at a time, appends that token to the context, and repeats. In practice, this stage is often paired with evaluation, inference optimizations such as KV caching, and optionally a user interface so the model can be interacted with more conveniently.
+
+In short, a modern LLM workflow usually moves from text preprocessing to attention and model construction, then to self-supervised pretraining, and finally to task-specific finetuning and inference. This staged view is useful because it makes clear that “building an LLM” is really a pipeline of separate but closely connected components.
 
 
 # Result
