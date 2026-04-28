@@ -59,6 +59,9 @@ Step 7: Finalize and Export
 
 # Output
 ## 1. Explain the foundational concepts of Generative AI.
+### What is Generative AI?
+
+Generative AI involves the use of models that generate new data resembling a given dataset. Unlike traditional AI, which focuses on classification and prediction, GenAI creates new content in a way that mimics human creativity. It is used across various domains including text generation, image synthesis, and personalized content creation.
 ## 2. Focusing on Generative AI architectures. (like transformers).
 ## Types of Generative AI Models
 ### 1. Transformers or Autoregressive Models
@@ -87,22 +90,41 @@ They are used in unstructured data insights, chatbots, content automation and in
 <img width="1700" height="1023" alt="image" src="https://github.com/user-attachments/assets/ef64e01a-2a57-4117-8c50-3ad153de5517" />
 
 ## 3. Generative AI architecture  and its applications.
-### 1. Data generation and augmentation:
-Gen AI creates synthetic data sets when real-world data is limited, helping enterprises improve machine learning models.
-### 2. Enhanced data search and discovery
-AI-powered search engines understand natural language queries, offering relevant responses and data insights without requiring complex queries.
-### 3. Personalized marketing and customer engagement
-AI generates customized recommendations, emails, product descriptions and advertisements, increasing user engagement.
-### 4. New product design and prototyping
-AI-driven simulations help engineers, architects and designers test multiple product variations by helping create renditions before committing to physical production.
-### 5. Creative content and media production
-Marketing teams use gen AI to create social media posts, video scripts, logos and ad campaigns, optimizing creative workflows.
-### 6. AI-powered business intelligence and analytics
-AI assists in data visualization, forecasting and automated report generation, making business decision-making more efficient.
-### 7. Improving search engine capabilities
-Search engines enhanced with gen AI generate summaries, suggest related topics and refine user queries, improving information retrieval.
+Generative AI has broad applications that include the following use cases:
+### Text generation and Natural Language Processing
+  #### • Content Generation: 
+  Writing text, articles, or stories using natural, human-like language and tone.
+  #### • Language Translation:
+  Improving language translation systems.
+  #### • Chatbots and Virtual Assistants:
+  Creating virtual agents capable of having helpful, effective conversations with humans.
+  #### • Text Summarization:
+  Generating summaries of lengthy texts.
+  #### • Sentiment Analysis: 
+  Understanding and classifying the tone and emotion embedded in text data.
+  ### Image generation and manipulation
+  #### Image creation: 
+Generating realistic images of objects, scenes, people, or anything else a user desires.
+  #### • Style Transfer:
+  Transferring the style of one image to another and producing specific visual effects.
+  #### • Super-Resolution:
+  Enhancing the resolution and quality of images.
+### Video Generation and Deepfake Creation: 
+Producing extremely realistic videos, or “deepfakes,” and manipulating existing videos.
+### Voice Generation:
+Creating human-like voices for voice assistants, navigation systems, and other applications.
+### Music generation: 
+Synthesizing instrument sounds and composing melodies, accompaniments, or entire compositions to assist musicians.
+### Game development: 
+Generating virtual game environments, characters, and assets.
+### Data augmentation:
+Creating synthetic data to enhance training datasets for machine learning models.
+### Anomaly detection: 
+Detecting anomalies in data by generating a model of “normal behavior” for a dataset and then identifying deviations from it.
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/2ba27e86-6181-4cd1-846d-98f3aa471ee1" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/57b5b35b-7868-499b-9a1b-f8e17a1fef28" />
+
+
 
 ## 4.  Generative AI impact of scaling in LLMs.
 ## 5.  Explain about LLM and how it is build.
@@ -111,7 +133,8 @@ Large language models (LLMs) are a category of deep learning models trained on i
 
 LLMs work as giant statistical prediction machines that repeatedly predict the next word in a sequence. They learn patterns in their text and generate language that follows those patterns.
 
-<img width="318" height="159" alt="image" src="https://github.com/user-attachments/assets/303221e4-83cd-4456-a665-80384cc333a6" />
+<img width="318" height="159" alt="image" src="https://github.com/user-attachments/assets/fcbaeb7f-0216-4afd-bb1d-c1626aef384b" />
+
 
 
 ## Building LLM model
